@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:id="@+id/tv_ss"
+        android:text="@string/you_want_to_se_something"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tv_cou"
+        style="@style/FragSurpriceTextViewStyle"
+        android:text="@string/courageous"
+        android:layout_marginTop="80dp" />
+
+    <TextView
+        android:id="@+id/tv_funny"
+        android:layout_below="@id/tv_cou"
+        android:layout_marginTop="12dp"
+        style="@style/FragSurpriceTextViewStyle"
+        android:text="@string/funny" />
+
+    <TextView
+        android:id="@+id/tv_Persuasive"
+        android:layout_below="@id/tv_funny"
+        android:layout_marginTop="12dp"
+        style="@style/FragSurpriceTextViewStyle"
+        android:text="@string/persuasive" />
+
+    <TextView
+        android:id="@+id/tv_ing"
+        android:layout_marginTop="12dp"
+        style="@style/FragSurpriceTextViewStyle"
+        android:layout_below="@id/tv_Persuasive"
+        android:text="@string/ingenious" />
+
+    <TextView
+        android:id="@+id/tv_jaw"
+        android:layout_below="@id/tv_ing"
+        android:layout_marginTop="12dp"
+        style="@style/FragSurpriceTextViewStyle"
+        android:text="@string/jaw_dropping"
+         />
+
+    <TextView
+        android:id="@+id/tv_bu"
+        android:layout_below="@id/tv_jaw"
+        style="@style/FragSurpriceTextViewStyle"
+        android:layout_marginTop="12dp"
+        android:text="@string/beautiful"
+         />
+
+    <TextView
+        android:id="@+id/tv_fasc"
+        android:layout_below="@id/tv_bu"
+        style="@style/FragSurpriceTextViewStyle"
+        android:layout_marginTop="12dp"
+        android:text="@string/fascinating" />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_below="@id/tv_fasc"
+        style="@style/FragSurpriceTextViewStyle"
+        android:layout_marginTop="12dp"
+        android:text="@string/informative" />
+
+    <TextView
+        android:id="@+id/tv_insp"
+        android:layout_below="@id/tv_info"
+        style="@style/FragSurpriceTextViewStyle"
+        android:layout_marginTop="12dp"
+        android:text="@string/inspiring" />
+
+
+</RelativeLayout>

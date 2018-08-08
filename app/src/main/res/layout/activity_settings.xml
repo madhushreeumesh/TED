@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2eded"
+    android:scrollbars="none"
+    tools:context=".activity.SettingsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/layout_main">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:background="@color/colorPrimary"
+            android:id="@+id/layout_general">
+
+            <TextView
+                android:id="@+id/tv_general"
+                android:text="@string/general"
+                style="@style/SettingsMainTextViewStyle"/>
+
+            <TextView
+                android:id="@+id/tv_gen1"
+                android:text="@string/limit_mobile_data_usage"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_general" />
+
+            <TextView
+                android:id="@+id/tv_gen2"
+                android:text="@string/ony_stream_hd_video_on_wi_fi"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_gen1" />
+
+            <CheckBox
+                android:id="@+id/ch_gen1"
+                style="@style/SettingsCheckboxStyle"
+                android:layout_marginTop="60dp"/>
+
+            <TextView
+                android:id="@+id/tv_gensecond"
+                android:text="@string/background_playback_on"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_gen2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_gensecond3"
+                android:layout_marginLeft="15dp"
+                android:text="@string/allow_video_and_audio_to_play_while_your_device_is_locked_or_app_is_closed"
+                android:layout_below="@id/tv_gensecond"
+                android:layout_marginRight="55dp"
+                android:inputType="textMultiLine"
+                android:textSize="14dp"/>
+
+            <CheckBox
+                android:id="@+id/ch_gen2"
+                android:layout_below="@id/ch_gen1"
+                style="@style/SettingsCheckboxStyle"
+                android:layout_marginTop="40dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_notify"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/layout_general">
+
+            <TextView
+                android:id="@+id/tv_notify"
+                android:text="@string/notifications"
+                style="@style/SettingsMainTextViewStyle"/>
+
+            <TextView
+                android:id="@+id/tv_n1"
+                android:text="@string/limit_mobile_data_usage"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_notify" />
+
+            <TextView
+                android:id="@+id/tv_n2"
+                android:text="@string/notify_me_when_new_talks_are_available"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_n1" />
+
+            <CheckBox
+                android:id="@+id/ch_notify1"
+                style="@style/SettingsCheckboxStyle"
+                android:layout_marginTop="60dp"/>
+
+            <TextView
+                android:id="@+id/tv_n3"
+                android:text="@string/recomended_talks"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_n2" />
+
+            <TextView
+                android:id="@+id/tv_n4"
+                android:text="@string/notify_me_of_talks_i_may_like"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_n3" />
+
+            <CheckBox
+                android:id="@+id/ch_notify2"
+                android:layout_below="@id/ch_notify1"
+                style="@style/SettingsCheckboxStyle"
+                android:layout_marginTop="40dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_language"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/layout_notify">
+
+            <TextView
+                android:id="@+id/tv_lang"
+                android:text="@string/language"
+                style="@style/SettingsMainTextViewStyle"/>
+
+            <TextView
+                android:id="@+id/tv_l1"
+                style="@style/SettingsTextViewStyle"
+                android:text="@string/app_language"
+                android:layout_below="@+id/tv_lang"/>
+
+            <TextView
+                android:id="@+id/tv_l2"
+                android:text="@string/system_default"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_l1" />
+
+            <TextView
+                android:id="@+id/tv_l3"
+                style="@style/SettingsTextViewStyle"
+                android:text="Subtitle language"
+                android:layout_below="@+id/tv_l2" />
+
+            <TextView
+                android:id="@+id/tv_l4"
+                android:text="@string/no_subtitles"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_l3" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_download"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/layout_language">
+
+            <TextView
+                android:id="@+id/tv_down"
+                android:text="@string/downloads"
+                style="@style/SettingsMainTextViewStyle"/>
+
+            <TextView
+                android:id="@+id/tv_d1"
+                android:text="@string/add_over_wi_fi_only"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_down" />
+
+            <TextView
+                android:id="@+id/tv_d2"
+                android:text="@string/only_download_over_wi_fi"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_d1" />
+
+            <CheckBox
+                android:id="@+id/ch_down"
+                style="@style/SettingsCheckboxStyle"
+                android:layout_marginTop="60dp"/>
+
+            <TextView
+                android:id="@+id/tv_d3"
+                android:text="@string/quality"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_d2" />
+
+            <TextView
+                android:id="@+id/tv_d4"
+                android:text="@string/ask_each_time"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_d3" />
+
+            <TextView
+                android:id="@+id/tv_d5"
+                android:text="@string/save_location"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_d4" />
+
+            <TextView
+                android:id="@+id/tv_d6"
+                android:text="@string/internal_storage"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_d5"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_privacy"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/layout_download">
+
+            <TextView
+                android:id="@+id/tv_priv"
+                android:text="@string/privacy"
+                style="@style/SettingsMainTextViewStyle"/>
+
+            <TextView
+                android:id="@+id/tv_p1"
+                android:text="@string/clear_watch_hiatory"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_priv" />
+
+            <TextView
+                android:id="@+id/tv_p2"
+                android:text="@string/claer_watch_history_from_this_device"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_p1" />
+
+            <TextView
+                android:id="@+id/tv_p3"
+                android:text="@string/clear_search_history"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_p2" />
+
+            <TextView
+                android:id="@+id/tv_p4"
+                android:text="@string/claer_search_history_from_this_device"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_p3" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_about"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_below="@id/layout_privacy">
+
+            <TextView
+                android:id="@+id/tv_about"
+                android:text="@string/about"
+                style="@style/SettingsMainTextViewStyle"/>
+
+            <TextView
+                android:id="@+id/tv_a1"
+                android:text="@string/liscenses"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_about" />
+
+            <TextView
+                android:id="@+id/tv_a2"
+                android:text="@string/liscense_details_for_open_source_software"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_a1" />
+
+
+            <TextView
+                android:id="@+id/tv_a3"
+                android:text="@string/transaction_credits"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_a2" />
+
+            <TextView
+                android:id="@+id/tv_a4"
+                android:text="@string/credit_details_for_talk_transactions"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_a3"/>
+
+            <TextView
+                android:id="@+id/tv_a5"
+                android:text="@string/about_ted"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_a4" />
+
+            <TextView
+                android:id="@+id/tv_a6"
+                android:text="@string/build_version"
+                style="@style/SettingsTextViewStyle"
+                android:layout_below="@+id/tv_a5" />
+
+            <TextView
+                android:id="@+id/tv_a7"
+                android:text="@string/_3_2_2"
+                style="@style/SettingsSmallTextViewStyle"
+                android:layout_below="@id/tv_a6" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
